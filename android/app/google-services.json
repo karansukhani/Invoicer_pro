@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "754375282546",
+    "project_id": "invoice-pro-ee046",
+    "storage_bucket": "invoice-pro-ee046.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754375282546:android:493bbc28b46c31abbe17eb",
+        "android_client_info": {
+          "package_name": "com.example.invoicer_pro_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUzkouc5sGHRJNzM6MFPDItP3sSCAEZgw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
