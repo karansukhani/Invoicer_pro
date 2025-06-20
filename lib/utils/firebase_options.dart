@@ -50,11 +50,11 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyACXDAqeLYF8WYK518zEEAsb2Um3poWGHs',
-    appId: '1:1048689860634:android:73504b46911147d46971a3',
-    messagingSenderId: '1048689860634',
-    projectId: 'invoicer_pro',
-    storageBucket: 'invoicer_pro.appspot.com',
+    apiKey: 'AIzaSyDUzkouc5sGHRJNzM6MFPDItP3sSCAEZgw',
+    appId: '1:754375282546:android:493bbc28b46c31abbe17eb',
+    messagingSenderId: '754375282546',
+    projectId: 'invoice-pro-ee046',
+    storageBucket: 'invoice-pro-ee046.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
