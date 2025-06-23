@@ -1,9 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:invoicer_pro_flutter/router/routing_constants.dart';
 
+import '../../component/text_styles.dart';
 import '../../constants/asset_constants.dart';
-import '../../constants/text_styles.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -16,6 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
+    redirectToScreen();
   }
 
   @override
@@ -77,6 +79,8 @@ class _SplashScreenState extends State<SplashScreen> {
   //This method redirects to the respective screen according to the data got
   Future<void> redirectToScreen() async {
     String nextScreen = "";
-    Timer(const Duration(seconds: 1), () async {});
+    Timer(const Duration(seconds: 1), () async {
+      Navigator.pushReplacementNamed(context, loginScreenRoute);
+    });
   }
 }
