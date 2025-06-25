@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:invoicer_pro_flutter/component/text_styles.dart';
 import 'package:invoicer_pro_flutter/component/ui/progress_dialog.dart';
 import 'package:invoicer_pro_flutter/constants/asset_constants.dart';
+import 'package:invoicer_pro_flutter/router/routing_constants.dart';
 import 'package:invoicer_pro_flutter/screen/login/logic/login_cubit.dart';
 import 'package:invoicer_pro_flutter/theme/color_constant.dart';
 import 'package:invoicer_pro_flutter/utils/custom_snack_bar.dart';
@@ -266,7 +267,9 @@ class _LoginScreenState extends State<LoginScreen> {
 
                     // Create Account Button
                     OutlinedButton(
-                      onPressed: () async {},
+                      onPressed: () async {
+                        Navigator.of(context).pushNamed(signupScreenRoute);
+                      },
                       style: OutlinedButton.styleFrom(
                         foregroundColor: const Color(0xFF5C6BC0),
                         side: const BorderSide(

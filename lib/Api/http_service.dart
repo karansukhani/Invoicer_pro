@@ -17,7 +17,7 @@ import '../utils/shared_preference/shared_pref.dart';
 
 class HttpService {
   // //live url
-  static const baseUrl = "http://localhost:8080";
+  static const baseUrl = "http://192.168.1.10:8080";
 
   late Dio _dio;
 
@@ -54,9 +54,9 @@ class HttpService {
       }
 
       response = await _dio.post(endPoint, data: map);
-    } on DioException catch (e) {
-      debugPrint(e.message);
-      throw Exception(e.message ?? '');
+    } on CustomException catch (e) {
+      debugPrint(e.cause);
+      throw CustomException(e.cause ?? '');
     }
     return response;
   }
